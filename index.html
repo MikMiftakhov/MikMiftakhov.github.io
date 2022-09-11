@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title> Задание 1 </title>
+  </head>
+  <body>
+	<h1 id="link_list"> Ссылки </h1> 
+    <ol>
+      <li> <a href = "http://example.com/"> абсолютная гиперссылка на главную страницу сайта example.com </a> </li>
+	    <li> <a href = "https://example.com/"> абсолютная гиперссылка на главную сайта example.com в протоколе https </a> </li>
+	    <li> <a href = "ftp://example.com/clockwork_orange.txt"> ссылка на файл на сервере FTP без авторизацией </a> </li>
+	    <li> <a href = "ftp://user:password@example.com/clockwork_orange.txt"> ссылка на файл на сервере FTP c авторизацией </a> </li>
+	    <li> <a href = "https://youtu.be/L_jWHffIx5E?t=37#watch7-content"> ссылка на фрагмент страницы некоторого сайта </a> </li>
+	    <li> <a href = "#link_list"> ссылка на фрагмент текущей страницы </a> </li>
+	    <li> <a href = "http://example.com?id=123456789&pass=123456789"> ссылка с двумя параметрами в URL </a> </li>
+	    <li> 
+	      список ссылок основной навигации сайта с подписями title
+		    <ul>
+		      <li><a href="index.html" title="На главную">На главную</a></li>
+          <li><a href="contact.html" title="Контакты">Контакты</a></li>
+          <li><a href="about.html" title="О сайте">О сайте</a></li>
+		    </ul>
+	    <li> <a> ссылка без href </a> </li>
+	    <li> <a href> ссылка с пустым href </a> </li>
+	    <li> <a href="https://example.com/" rel="nofollow"> ссылка, по которой запрещен переход поисковикам </a> </li>
+	    <li> <!--noindex--> <a href="https://example.com/"> ссылка, запрещенная для индексации поисковиками </a> <!--/noindex--> </li>
+	    <li> <p> <a href="https://example.com/">ссылка</a> контекстная в тексте абзаца </p> </li>
+	    <li> <a href = "meow2.jpg"> <img src="meow1.jpg" width="180" height="216"> </a> </li>
+	    <li>
+	      <img <img src="circle_square.jpg" width="333" height="165" usemap = "#figuri">
+	      <map name = "figuri" >
+			    <area shape = "rect" coords = "10,30,150,120" href = "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
+			    <area shape = "circle" coords = "253,83,75" href = "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA">
+	      </map>
+	    </li>
+	    <li> <a href = "file_1.html"> относительная ссылка на страницу в текущем каталоге </a> </li>
+	    <li> <a href = "about/file_2.html"> относительная ссылка на страницу в каталоге about </a> </li>
+	    <li> <a href = "../file_3.html"> относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+	    <li> <a href = "../../file_4.html"> относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+	    <li> <a href = "/index.html"> сокращенную на главную </a> </li>
+	    <li> <a href = "/file_1.html"> сокращенную ссылку на внутреннюю </a> </li>
+	</ol>
+</html>
