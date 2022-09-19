@@ -4,130 +4,180 @@
 		<title> Задание 1 </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="test/style.css">
 	</head>
 	<body>
-		<h1 id="link-list"> Ссылки </h1> 
-		<ol>
-			<li><a href="http://example.com/"> абсолютная гиперссылка на главную страницу сайта example.com </a> </li>
-			<li><a href="https://example.com/"> абсолютная гиперссылка на главную сайта example.com в протоколе https </a> </li>
-			<li><a href="ftp://example.com/clockwork-orange.txt"> ссылка на файл на сервере FTP без авторизацией </a> </li>
-			<li><a href="ftp://user:password@example.com/clockwork-orange.txt"> ссылка на файл на сервере FTP c авторизацией </a> </li>
-			<li><a href="https://youtu.be/L_jWHffIx5E?t=37#watch7-content"> ссылка на фрагмент страницы некоторого сайта </a> </li>
-			<li><a href="#link-list"> ссылка на фрагмент текущей страницы </a> </li>
-			<li><a href="http://example.com?id=123456789&pass=123456789"> ссылка с двумя параметрами в URL </a> </li>
-			<li> 
-				список ссылок основной навигации сайта с подписями title
-				<ul>
-					<li><a href="index.html" title="На главную">На главную</a></li>
-					<li><a href="contact.html" title="Контакты">Контакты</a></li>
-					<li><a href="about.html" title="О сайте">О сайте</a></li>
-				</ul>
-			<li> <a> ссылка без href </a> </li>
-			<li> <a href=""> ссылка с пустым href </a> </li>
-			<li> <a href="https://example.com/" rel="nofollow"> ссылка, по которой запрещен переход поисковикам </a> </li>
-			<li> <!--noindex--> <a href="https://example.com/"> ссылка, запрещенная для индексации поисковиками </a> <!--/noindex--> </li>
-			<li> <p> <a href="https://example.com/">ссылка</a> контекстная в тексте абзаца </p> </li>
-			<li> <a href="test/meow2.jpg"> <img src="test/meow1.jpg" width="180" height="216" alt="a cat"/> </a> </li>
-			<li>
-				<img src="test/circle_square.jpg" alt="circle and square" width="333" height="165" usemap = "#figuri"/>
-				<map name="figuri" >
-					<area shape="rect" coords="10,30,150,120" alt="square" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
-					<area shape="circle" coords="253,83,75" alt="circle" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA">
-				</map>
-			</li>
-			<li> <a href="file-1.html"> относительная ссылка на страницу в текущем каталоге </a> </li>
-			<li> <a href="about/file-2.html"> относительная ссылка на страницу в каталоге about </a> </li>
-			<li> <a href="../file-3.html"> относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
-			<li> <a href="../../file-4.html"> относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
-			<li> <a href="/index.html"> сокращенную на главную </a> </li>
-			<li> <a href="/file-1.html"> сокращенную ссылку на внутреннюю </a> </li>
-		</ol>
-		<h2> Форма </h2>
-		<form action="/" method="POST">
-			<label>
-				Имя
+		<header>
+			<div class="crutch">
+				<img id="logo" src="test/meow_logo.jpg" alt="a cat with cake"/>
+				<div id="name">  Название сайта </div>	
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#list" title="Ссылки">Ссылки</a></li>
+				<li><a href="#table" title="Таблица">Таблица</a></li>
+				<li><a href="#form" title="Форма">Форма</a></li>
+			</ul>
+		</nav>
+		<div id="list">
+			<h1> Ссылки </h1> 
+			<ol>
+				<li><a href="http://example.com/"> абсолютная гиперссылка на главную страницу сайта example.com </a> </li>
+				<li><a href="https://example.com/"> абсолютная гиперссылка на главную сайта example.com в протоколе https </a> </li>
+				<li><a href="ftp://example.com/clockwork-orange.txt"> ссылка на файл на сервере FTP без авторизацией </a> </li>
+				<li><a href="ftp://user:password@example.com/clockwork-orange.txt"> ссылка на файл на сервере FTP c авторизацией </a> </li>
+				<li><a href="https://youtu.be/L_jWHffIx5E?t=37#watch7-content"> ссылка на фрагмент страницы некоторого сайта </a> </li>
+				<li><a href="#link-list"> ссылка на фрагмент текущей страницы </a> </li>
+				<li><a href="http://example.com?id=123456789&pass=123456789"> ссылка с двумя параметрами в URL </a> </li>
+				<li> 
+					список ссылок основной навигации сайта с подписями title
+					<ul>
+						<li><a href="index.html" title="На главную">На главную</a></li>
+						<li><a href="contact.html" title="Контакты">Контакты</a></li>
+						<li><a href="about.html" title="О сайте">О сайте</a></li>
+					</ul>
+				</li>
+				<li> <a> ссылка без href </a> </li>
+				<li> <a href=""> ссылка с пустым href </a> </li>
+				<li> <a href="https://example.com/" rel="nofollow"> ссылка, по которой запрещен переход поисковикам </a> </li>
+				<li> <!--noindex--> <a href="https://example.com/"> ссылка, запрещенная для индексации поисковиками </a> <!--/noindex--> </li>
+				<li> <p> <a href="https://example.com/">ссылка</a> контекстная в тексте абзаца </p> </li>
+				<li> <a href="test/meow2.jpg"> <img src="test/meow1.jpg" width="180" height="216" alt="a cat"/> </a> </li>
+				<li>
+					<img src="test/circle_square.jpg" alt="circle and square" width="333" height="165" usemap = "#figuri"/>
+					<map name="figuri" >
+						<area shape="rect" coords="10,30,150,120" alt="square" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
+						<area shape="circle" coords="253,83,75" alt="circle" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA">
+					</map>
+				</li>
+				<li> <a href="file-1.html"> относительная ссылка на страницу в текущем каталоге </a> </li>
+				<li> <a href="about/file-2.html"> относительная ссылка на страницу в каталоге about </a> </li>
+				<li> <a href="../file-3.html"> относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+				<li> <a href="../../file-4.html"> относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+				<li> <a href="/index.html"> сокращенную на главную </a> </li>
+				<li> <a href="/file-1.html"> сокращенную ссылку на внутреннюю </a> </li>
+			</ol>
+			</div>
+		<div id="table">
+			<h1> Таблица </h1>
+			<table>
+				<tr class="odd_line">
+					<td colspan="3">Ячейка 11 объединенная с 12</td>
+				</tr>
+				<tr class="even_line">
+					<td>Ячейка 21</td>
+					<td>Ячейка 22</td>
+					<td>Ячейка 23</td>
+				</tr>
+				<tr class="odd_line">
+					<td>Ячейка 31</td>
+					<td>Ячейка 32</td>
+					<td>Ячейка 33</td>
+				</tr>
+				<tr class="even_line">
+					<td>Ячейка 41</td>
+					<td>Ячейка 42</td>
+					<td>Ячейка 43</td>
+				</tr>
+				<tr class="odd_line">
+					<td>Ячейка 51</td>
+					<td>Ячейка 52</td>
+					<td>Ячейка 53</td>
+				</tr>
+			</table>
+			</div>
+		<div id="form">
+			<h1> Форма </h1>
+			<form action="/" method="POST">
+				<label>
+					Имя
+					<br>
+					<input name="field-name" value="введите имя">
+				</label>
 				<br>
-				<input name="field-name" value="введите имя">
-			</label>
-			<br>
-			<label>
-				e-mail
+				<label>
+					e-mail
+					<br>
+					<input name="field-email" type="email" value="введите эл. почту">
+				</label>
 				<br>
-				<input name="field-email" type="email" value="введите эл. почту">
-			</label>
-			<br>
-			<label>
-				 Дата рождения
+				<label>
+					 Дата рождения
+					<br>
+					<input name="field-date" type="date" value="1955-06-08">
+				</label>
 				<br>
-				<input name="field-date" type="date" value="1955-06-08">
-			</label>
-			<br>
-			Пол
-			<br>
-			<label>
-				<input type="radio" name="field-gender">
-					Мужской
-			</label>
-			<label>
-				<input name="field-gender" type="radio" value="Женский">
-					Женский
-			</label>
-			<label>
-				<input name="field-gender" type="radio" value="Другое">
-					USS Laffey DD-459
-			</label>
-			<br>
-			Количество конечностей
-			<br>
-			<label>
-				<input name="field-count" type="radio" value="0">
-					0
-			</label>
-			<label>
-				<input name="field-count" type="radio" value="1">
-					1
-			</label>
-			<label>
-				<input name="field-count" type="radio" value="2">
-					2
-			</label>
-			<label>
-				<input name="field-count" type="radio" value="3">
-					3
-			</label>
-			<label>
-				<input name="field-count" type="radio" value="4">
-					4
-			</label>
-			<label>
-				<input name="field-count" type="radio" value=">4">
-					>4
-			</label>
-			<br>
-			<label>
-				Суперсила
+				Пол
 				<br>
-				<select name="field-power" multiple="multiple">
-					<option value="Значение1"> бессмертие</option>
-					<option value="Значение2"> прохождение сквозь стены</option>
-					<option value="Значение3"> левитация</option>
-				</select>
-			</label>
-			<br>
-			<label>
-				Биография
+				<label>
+					<input type="radio" name="field-gender">
+						Мужской
+				</label>
+				<label>
+					<input name="field-gender" type="radio" value="Женский">
+						Женский
+				</label>
+				<label>
+					<input name="field-gender" type="radio" value="Другое">
+						USS Laffey DD-459
+				</label>
 				<br>
-				<textarea name="field-biography"></textarea>
-			</label>
-			<br>
-			<label>
-				С контрактом ознакомлен(а)
+				Количество конечностей
 				<br>
-				<input name="field-check" type="checkbox">
-					Ознакомлен(а)
-			</label>
-			<br>
-			<input type="submit" value="Отправить">
-		</form>
+				<label>
+					<input name="field-count" type="radio" value="0">
+						0
+				</label>
+				<label>
+					<input name="field-count" type="radio" value="1">
+						1
+				</label>
+				<label>
+					<input name="field-count" type="radio" value="2">
+						2
+				</label>
+				<label>
+					<input name="field-count" type="radio" value="3">
+						3
+				</label>
+				<label>
+					<input name="field-count" type="radio" value="4">
+						4
+				</label>
+				<label>
+					<input name="field-count" type="radio" value=">4">
+						>4
+				</label>
+				<br>
+				<label>
+					Суперсила
+					<br>
+					<select name="field-power" multiple="multiple">
+						<option value="Значение1"> бессмертие</option>
+						<option value="Значение2"> прохождение сквозь стены</option>
+						<option value="Значение3"> левитация</option>
+					</select>
+				</label>
+				<br>
+				<label>
+					Биография
+					<br>
+					<textarea name="field-biography"></textarea>
+				</label>
+				<br>
+				<label>
+					С контрактом ознакомлен(а)
+					<br>
+					<input name="field-check" type="checkbox">
+						Ознакомлен(а)
+				</label>
+				<br>
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
+		<footer>
+			Что здесь надо писать?
+		</footer>
 	</body>
 </html>
