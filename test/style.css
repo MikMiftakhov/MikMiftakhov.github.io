@@ -1,6 +1,6 @@
 nav, #list, #table, #form{
 	max-width:960px; 
-	background-color:#ccc; 
+	background-color: #f9c6cf; 
 	margin: 0 auto;
 	margin-top:20px; 
 	padding:20px;
@@ -8,7 +8,7 @@ nav, #list, #table, #form{
 
 header, footer {
 	width:100%; 
-	background-color:#ccc; 
+	background-color:#f9c6cf; 
 	padding: 10px; 
 	height:120px;
 	margin-top: 20px;
