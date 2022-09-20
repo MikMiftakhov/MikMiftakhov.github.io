@@ -55,5 +55,9 @@ nav ul li {
 }
 
 table {
-	border: 1px;
+	border: 1px black;
+}
+
+tr {
+	border; 1px #242424;	
 }
