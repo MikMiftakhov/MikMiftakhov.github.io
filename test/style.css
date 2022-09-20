@@ -53,3 +53,7 @@ nav ul li {
 .even_line {
 	background: #f3e5ab;
 }
+
+table {
+	border: 1px;
+}
