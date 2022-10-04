@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title> Задание 4 </title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="test/test_style.css">
+	<style>
+		body {
+			background: url(test/back_paw.png);
+			background-size: 300px auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid px-2">
+		<div class="flex-column d-flex">
+			<div class="my-2">
+				<header>
+					<div class="col-md-6 px-md-0 mx-md-auto d-flex align-items-center justify-content-between justify-content-md-start" style="height: 100%">
+						<img id="logo" src="test/meow_logo.jpg" alt="a cat with cake" />
+						<div class="mx-2">
+							<h1 id="name"> котёнковое место </h1>
+						</div>
+					</div>
+				</header>
+			</div>
+
+			<div class="col-md-6 my-2 px-0 mx-md-auto">
+				<nav>
+					<ul style="padding-left: 0px; margin-bottom: 0px;">
+						<div class="row d-flex justify-content-around">
+							<div class="col-md ml-1 ml-md-0 text-md-center">
+								<li><a href="#list" title="Ссылки">Ссылки</a></li>
+							</div>
+							<div class="col-md ml-1 ml-md-0 text-md-center">
+								<li><a href="#table" title="Таблица">Таблица</a></li>
+							</div>
+							<div class="col-md ml-1 ml-md-0 text-md-center">
+								<li><a href="#form" title="Форма">Форма</a></li>
+							</div>
+						</div>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-6 my-2 px-0 mx-md-auto">
+				<div id="list">
+					<h1> Ссылки </h1>
+					<ol style="margin-bottom: 0px;">
+						<li><a href="http://example.com/"> абсолютная гиперссылка на главную страницу сайта
+								example..com
+							</a> </li>
+						<li><a href="https://example.com/"> абсолютная гиперссылка на главную сайта example.com в
+								протоколе
+								https </a> </li>
+						<li><a href="ftp://example.com/clockwork-orange.txt"> ссылка на файл на сервере FTP без
+								авторизацией
+							</a> </li>
+						<li><a href="ftp://user:password@example.com/clockwork-orange.txt"> ссылка на файл на
+								сервере
+								FTP c
+								авторизацией </a> </li>
+						<li><a href="https://youtu.be/L_jWHffIx5E?t=37#watch7-content"> ссылка на фрагмент страницы
+								некоторого сайта </a> </li>
+						<li><a href="#link-list"> ссылка на фрагмент текущей страницы </a> </li>
+						<li><a href="http://example.com?id=123456789&pass=123456789"> ссылка с двумя параметрами в
+								URL
+							</a>
+						</li>
+						<li>
+							список ссылок основной навигации сайта с подписями title
+							<ul>
+								<li><a href="index.html" title="На главную">На главную</a></li>
+								<li><a href="contact.html" title="Контакты">Контакты</a></li>
+								<li><a href="about.html" title="О сайте">О сайте</a></li>
+							</ul>
+						</li>
+						<li> <a> ссылка без href </a> </li>
+						<li> <a href=""> ссылка с пустым href </a> </li>
+						<li> <a href="https://example.com/" rel="nofollow"> ссылка, по которой запрещен переход
+								поисковикам
+							</a> </li>
+						<li>
+							<!--noindex--> <a href="https://example.com/"> ссылка, запрещенная для индексации
+								поисковиками
+							</a>
+							<!--/noindex-->
+						</li>
+						<li>
+							<p> <a href="https://example.com/">ссылка</a> контекстная в тексте абзаца </p>
+						</li>
+						<li> <a href="test/meow2.jpg"> <img src="test/meow1.jpg" alt="a cat" />
+							</a> </li>
+						<li>
+							<img src="test/circle_square.jpg" alt="circle and square" width="333" height="165"
+								usemap="#figuri" />
+							<map name="figuri">
+								<area shape="rect" coords="10,30,150,120" alt="square"
+									href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
+								<area shape="circle" coords="253,83,75" alt="circle"
+									href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA">
+							</map>
+						</li>
+						<li> <a href="file-1.html"> относительная ссылка на страницу в текущем каталоге </a> </li>
+						<li> <a href="about/file-2.html"> относительная ссылка на страницу в каталоге about </a>
+						</li>
+						<li> <a href="../file-3.html"> относительная ссылка на страницу в каталоге уровнем выше
+								текущего
+							</a> </li>
+						<li> <a href="../../file-4.html"> относительная ссылка на страницу в каталоге двумя уровнями
+								выше
+							</a> </li>
+						<li> <a href="/index.html"> сокращенную на главную </a> </li>
+						<li> <a href="/file-1.html"> сокращенную ссылку на внутреннюю </a> </li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="col-md-6 my-2 px-0 mx-md-auto order-md-2">
+				<div id="form">
+					<h1> Форма </h1>
+					<form action="/" method="POST">
+						<label>
+							Имя
+							<br>
+							<input name="field-name" value="введите имя">
+						</label>
+						<br>
+						<label>
+							e-mail
+							<br>
+							<input name="field-email" type="email" value="введите эл. почту">
+						</label>
+						<br>
+						<label>
+							Дата рождения
+							<br>
+							<input name="field-date" type="date" value="1955-06-08">
+						</label>
+						<br>
+						Пол
+						<br>
+						<label>
+							<input type="radio" name="field-gender">
+							Мужской
+						</label>
+						<label>
+							<input name="field-gender" type="radio" value="Женский">
+							Женский
+						</label>
+						<label>
+							<input name="field-gender" type="radio" value="Другое">
+							USS Laffey DD-459
+						</label>
+						<br>
+						Количество конечностей
+						<br>
+						<label>
+							<input name="field-count" type="radio" value="0">
+							0
+						</label>
+						<label>
+							<input name="field-count" type="radio" value="1">
+							1
+						</label>
+						<label>
+							<input name="field-count" type="radio" value="2">
+							2
+						</label>
+						<label>
+							<input name="field-count" type="radio" value="3">
+							3
+						</label>
+						<label>
+							<input name="field-count" type="radio" value="4">
+							4
+						</label>
+						<label>
+							<input name="field-count" type="radio" value=">4">
+							>4
+						</label>
+						<br>
+						<label>
+							Суперсила
+							<br>
+							<select name="field-power" multiple="multiple">
+								<option value="Значение1"> бессмертие</option>
+								<option value="Значение2"> прохождение сквозь стены</option>
+								<option value="Значение3"> левитация</option>
+							</select>
+						</label>
+						<br>
+						<label>
+							Биография
+							<br>
+							<textarea name="field-biography"></textarea>
+						</label>
+						<br>
+						<label>
+							С контрактом ознакомлен(а)
+							<br>
+							<input name="field-check" type="checkbox">
+							Ознакомлен(а)
+						</label>
+						<br>
+						<input type="submit" value="Отправить">
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-6 my-2 px-0 mx-md-auto order-md-1">
+				<div id="table">
+					<h1> Таблица </h1>
+					<table>
+						<tr class="odd_line">
+							<td colspan="3">Ячейка 11 объединенная с 12</td>
+						</tr>
+						<tr class="even_line">
+							<td>Ячейка 21</td>
+							<td>Ячейка 22</td>
+							<td>Ячейка 23</td>
+						</tr>
+						<tr class="odd_line">
+							<td>Ячейка 31</td>
+							<td>Ячейка 32</td>
+							<td>Ячейка 33</td>
+						</tr>
+						<tr class="even_line">
+							<td>Ячейка 41</td>
+							<td>Ячейка 42</td>
+							<td>Ячейка 43</td>
+						</tr>
+						<tr class="odd_line">
+							<td>Ячейка 51</td>
+							<td>Ячейка 52</td>
+							<td>Ячейка 53</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="my-2 order-md-3">
+				<footer>
+					Что здесь надо писать?
+				</footer>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
