@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Задание 5</title>
+    <meta charset="utf-8">
+    <script src="test/calc2.js" defer></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Количество котенков: </td>
+            <td><label><input name="prodCount" type="text"></label></td>
+        </tr>
+        <tr>
+            <td>Порода:</td>
+            <td>
+                <select name="prodType">
+                    <option value="1">Русская голубая</option>
+                    <option value="2">Японский бобтейл</option>
+                    <option value="3">Дворняжка</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr id="radios" style="display: none;">
+            <td>Длина шерсти:</td>
+            <td>
+                <div>
+                    <label><input type="radio" name="prodOptions" value="op1">Короткошерстный</label>
+                    <label><input type="radio" name="prodOptions" value="op2">Длинноошерстный</label>
+                </div>
+            </td>
+        </tr>
+
+        <tr id="checkboxes" style="display: none;">
+            <td>Окраска:</td>
+            <td>
+                <label><input type="checkbox" name="prodProperties" value="pr1">Белая</label>
+                <label><input type="checkbox" name="prodProperties" value="pr2">Черная</label>
+                <label><input type="checkbox" name="prodProperties" value="pr3">Рыжая</label>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        Итого к оплате: <span id="result"></span>
+    </div>
+</body>
+
+</html>
