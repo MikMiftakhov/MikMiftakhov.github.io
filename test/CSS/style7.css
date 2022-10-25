@@ -109,6 +109,11 @@ body {
         height: 20px;
     }
 
+    .slick-dots li.used button {
+        width: 20px;
+        height: 20px;
+    }
+    
     .slick-dots li.slick-active button {
         width: 30px;
         height: 30px;
