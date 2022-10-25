@@ -75,6 +75,12 @@ body {
     height: 40px;
 }
 
+.slick-dots li.used button {
+    background: url('../other/dot_used.png') 0 0/100%;
+    width: 40px;
+    height: 40px;
+}
+
 .slick-dots li.slick-active button {
     background: url('../other/dot_active1.png') 0 0/100%;
     width: 50px;
