@@ -45,7 +45,9 @@ window.addEventListener("DOMContentLoaded", function () {
                 .catch((error) => { alert("Error"); });
             event.preventDefault();
         }
-        else
-            alert("Подтвердите отправку");
+        else {
+            alert("Дайте свое согласие на отправку");
+            event.preventDefault();
+        }
     })
 });
