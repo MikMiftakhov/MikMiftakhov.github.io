@@ -2,35 +2,59 @@
 <html>
 
 <head>
-
-
+    <title>Задание 8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test/CSS/style8.css">
+    <script src="test/JS/form.js" defer></script>
+    <script src="test/JS/popup.js" defer></script>
 </head>
 
 <body>
-    <form action="/" method="POST">
-        <label>
-            Имя <br>
-            <input name="field-name" value="введите имя">
-        </label>
-        <br>
-        <label>
-            e-mail <br>
-            <input name="field-email" type="email" value="введите эл. почту">
-        </label>
-        <br>
-        <label>
-            Биография <br>
-            <textarea name="field-biography"> мяу</textarea>
-        </label>
-        <br>
-        <label>
-            С контрактом ознакомлен(а)
-            <br>
-            <input name="field-check" type="checkbox"> Ознакомлен(а)
-        </label>
-        <br>
-        <input type="submit" value="Отправить">
-    </form>
+    <!-- <div class="test">
+        <button id="test_button" type="button"> Тест </button>
+        <button id="fbutton" type="button"> forward </button>
+        <button id="bbutton" type="button"> back </button>
+        <button id="gbutton" type="button"> go </button>
+        <button id="pbutton" type="button"> push </button>
+        <button id="rbutton" type="button"> replace </button>
+        <button id="apbutton" type="button"> apush </button>
+        <button id="arbutton" type="button"> areplace </button>
+    </div> -->
+    <button id="popupOpen" type="button"></button>
+
+    <div id="popup" class="popup">
+        <div id="popupBody" class="popupBody">
+            <div class="popupContent">
+                <button id="popupClose" type="button"></button>
+                <form id="popupForm" class="popupForm" accept-charset="UTF-8">
+                    <label>
+                        Имя: <br>
+                        <input id="formName" name="field_name" placeholder="Введите Ваше имя" required>
+                    </label>
+                    <br>
+                    <label>
+                        E-mail: <br>
+                        <input id="formEmail" name="field_email" type="email" placeholder="Введите Ваш email" required>
+                    </label>
+                    <br>
+                    <label>
+                        Отзыв: <br>
+                        <textarea id="formMessage" name="field_review" rows="3"></textarea>
+                    </label>
+                    <br>
+                    <label>
+                        С контрактом ознакомлен(а)
+                        <br>
+                        <input id="formCheck" name="field_check" type="checkbox"> Ознакомлен(а)
+                    </label>
+                    <br>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
